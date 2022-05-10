@@ -1,0 +1,5 @@
+Input csv file with hostname entries stored in a column 
+Output text file with resolved DNS values 
+
+PowerShell Bulk DNS lookup
+Get-content hostlist.txt |foreach {Resolve-DnsName -Name $_} | Out-file .\hosts1.txt
